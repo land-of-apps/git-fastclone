@@ -2,6 +2,8 @@
 
 source 'https://rubygems.org'
 
+gem 'appmap'
+
 group :development do
   gem 'bundler'
   gem 'rake'
