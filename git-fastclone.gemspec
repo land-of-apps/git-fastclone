@@ -15,6 +15,10 @@
 $:.push File.expand_path("../lib", __FILE__)
 require 'git-fastclone/version'
 
+# Appmap workaround for this to run on newer (2.5 and up) versions of Ruby
+# https://github.com/rubygems/bundler/issues/5470
+require 'date'
+
 Gem::Specification.new do |gem|
   gem.name          = 'git-fastclone'
   gem.version       = GitFastCloneVersion::VERSION
