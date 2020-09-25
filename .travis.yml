@@ -1,8 +1,8 @@
-language:
-  ruby
+# Turn on validation, so we can use import:
+version: ~> 1.0
 
-rvm:
-  - 2.1.3
-  - 2.2
-  - 2.3.1
-  - 2.6.0
+import:
+- land-of-apps/land-of-apps:travis/ruby-imports.yml
+
+script:
+- APPMAP=true bundle exec rspec
