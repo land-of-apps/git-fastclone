@@ -7,7 +7,7 @@ group :development do
   gem 'rubocop'
 end
 
-gem 'appmap'
+gem 'appmap', github: 'applandinc/appmap-ruby', branch: 'master'
 gem 'rspec'
 gem 'logger'
 
