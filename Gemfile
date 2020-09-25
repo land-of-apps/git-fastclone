@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-gem 'appmap'
+gem 'appmap', github: 'applandinc/appmap-ruby', branch: 'master'
 
 group :development do
   gem 'bundler'
